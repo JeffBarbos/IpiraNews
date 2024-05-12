@@ -1,0 +1,32 @@
+<head>
+    <title>Error 404</title>
+<style>
+    h1{
+        font-size: 30px;
+        font-weight: lighter;
+        padding: 60px 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .bod{
+        height: 100vh;
+        position: relative;
+        width: 100%;
+    }
+    .footer{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+</style>
+</head>
+<body>
+    <div class="bod">
+    <%- include('partials/header.html') %>
+    <h1>A Pagina não existe</h1>
+
+    <div class="footer"><%- include('partials/footer.html') %></div>
+    </div>
+</body>

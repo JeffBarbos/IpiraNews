@@ -1,0 +1,55 @@
+<%- include('partials/header.html') %>
+    <section class="main-news">
+        <div class="center">
+            <div class="img-main">
+                <div class="overlay-main"></div>
+                <div class="title-main">
+                    <a href="<%= post[0].slug %>"><h2><%= post[0].titulo %></h2></a>
+                    <p><%- post[0].descricaoCurta %>...</p>
+                </div>
+                <img src="<%= post[0].imagem %>">
+            </div>
+        </div>
+    </section>
+
+    <section class="other-news">
+        <div class="title-other">
+            <h2>Últimas Noticías</h2>
+            <br><br><br>
+            <div class="center">
+                <div class="ends">
+                    <% for (let i = 1; i < post.length; i++){ %>
+                    <div class="ends-box-single">
+                        <img src="<%= post[i].imagem %>">
+                        <div class="text-end">
+                            <h4><%= post[i].categoria %></h4>
+                            <h3><%= post[i].titulo %></h3>
+                            <p><%- post[i].descricaoCurta %>... </p>
+                            <div class="link-end">
+                                <a href="<%= post[i].slug %>">Saiba mais</a>
+                            </div>
+                        </div>
+                    </div>
+                    <% } %>
+                </div>
+                <div class="reads">
+                    <h3>Mais lidas</h3>
+                    <div class="much-news">
+                        <% for (let i = 1; i < posttop.length; i++){ %>
+                            <div class="much-news-single">
+                                <img src="<%= posttop[i].imagem %>">
+                                <div class="text-much-news">
+                                    <h4><a style="text-decoration: none; color: #0072CA;" href="<%= posttop[i].slug %>"><%= posttop[i].titulo %></a></h4>
+                                    <p><%- posttop[i].descricaoCurta %></p>
+                                    <span style="font-size: 12px; color: red; font-weight: bold;">Views: <%= posttop[i].views %></span>
+                                </div>
+                            </div>
+                        <% } %>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </section>
+    <%- include('partials/footer.html') %>
+</body>
+</html>

@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;;
+}
+
+.centersin{
+    max-width: 1380px;
+    margin: 0 auto;
+    padding: 0 2%;
+    display: flex;
+    flex-wrap: nowrap;
+}
+.news{
+    background-color: #eaeaea;
+    padding: 30px 20px;
+}
+.news-single{
+    background-color: white;
+    padding: 10px 50px;
+    width: 60%;
+    margin-right: 25px;
+    border-radius: 15px;
+}
+.news-single .author span{
+    letter-spacing: 3.2px;
+    color: #858585;
+}
+.news-single h2{
+    color: black;
+    font-size: 30px;
+    padding: 20px 0;
+}
+.news-single h3{
+    color: #7B8591;
+    font-size: 20px;
+}
+.news-single p{
+    color: #7B8591;
+    font-size: 15px;
+}
+.white{
+    width: 100%;
+    padding: 40px 0;
+}
+.reads{
+    width: 35%;
+    height: 100%;
+    background-color: white;
+    padding-bottom: 50px;
+    border-radius: 12px;
+}
+.reads h3{
+    color: white;
+    background-color: #3f51b5;
+    padding: 12px;
+    text-align: center;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+.much-news-single{
+    display: flex;
+    padding: 15px;
+    text-align: left;
+}
+.much-news-single img{
+    width: 30%;
+    padding-right: 20px ;
+}
+.much-news-single .text-much-news{
+    width: 70%;
+}
+.text-much-news h4{
+    letter-spacing: 3.2px;
+    font-size: 13px;
+    padding: 15px 0 10px 0;
+}
+.text-much-news p{
+    color: #7B8591;
+    font-size: 12px;
+    padding-right: 25px; ;
+}
+
+@media screen and (max-width:1100px) {
+    .news-single{
+        padding: 10px 30px;
+        width: 55%;
+    }
+    .reads{
+        width: 45%;
+    }
+
+}
+@media screen and (max-width:900px){
+    .news-single{
+        padding: 10px 30px;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .reads{
+        width: 100%;
+    }
+    .centersin{
+        display: inline-block;
+    }
+    .text-much-news h4{
+        letter-spacing: 3.2px;
+        font-size: 16px;
+        padding: 15px 0 10px 0;
+    }
+    .text-much-news p{
+        color: #7B8591;
+        font-size: 13px;
+        padding-right: 15px; ;
+    }
+    
+}
+@media screen and (max-width:750px){
+
+    .reads{
+        width: 100%;
+    }
+
+}

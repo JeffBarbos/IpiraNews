@@ -1,0 +1,23 @@
+<%- include('partials/header.html') %>
+    <div class="center">
+        <div class="search">
+            <h1>Busca:</h1>
+            <h3>Resultados: <%= contagem %></h3>
+            <div class="much-news">
+                <% for (let i = 0; i < post.length; i++){ %>
+                    <div class="search-box">
+                        <img src="<%= post[i].imagem %>">
+                        <div class="search-text">
+                            <h4><a style="text-decoration: none; color: #0072CA;" href="<%= post[i].slug %>"><%= post[i].titulo %></a></h4>
+                            <span><%= post[i].categoria %></span>
+                            <p><%- post[i].conteudo %></p>
+                        </div>
+                    </div>
+                <% } %>
+            </div>
+        </div>
+    </div>
+
+<%- include('partials/footer.html') %>
+</body>
+</html>
