@@ -1,0 +1,11 @@
+   <div class="assistance">
+        <span class="material-symbols-outlined">
+            mark_unread_chat_alt
+            </span>
+    </div>
+    <div class="message-box">
+        <ul id="messages"></ul>
+        <form id="form" action="">
+      <input id="input" autocomplete="off" /><button>Send</button>
+    </form>
+    </div>

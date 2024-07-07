@@ -4,7 +4,7 @@ const postSchema = new schema ({
     titulo: String,
     imagem: String,
     categoria: String,
-    conteudo: String,
+    conteudo: String, 
     slug: String,
     autor: String,
     views: Number,
